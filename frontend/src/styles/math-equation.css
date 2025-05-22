@@ -1,0 +1,19 @@
+/* Math Equation styles */
+.math-equation {
+  margin: 1rem 0;
+}
+
+.equation-content {
+  background-color: #1f2937;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-family: monospace;
+  text-align: center;
+  overflow-x: auto;
+}
+
+.equation-description {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  margin-top: 0.5rem;
+}

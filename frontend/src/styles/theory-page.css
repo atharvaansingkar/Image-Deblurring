@@ -1,0 +1,138 @@
+/* Theory Page styles */
+.theory-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.page-description {
+  color: #9ca3af;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.pipeline-section {
+  background-color: #1f2937;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.pipeline-diagram {
+  position: relative;
+}
+
+.pipeline-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pipeline-step {
+  background-color: #374151;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.step-number {
+  color: #8b5cf6;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.pipeline-arrow {
+  display: none;
+  color: #6b7280;
+}
+
+.theory-sections {
+  margin-bottom: 3rem;
+}
+
+.theory-content {
+  color: #d1d5db;
+}
+
+.theory-content p {
+  margin-bottom: 1rem;
+}
+
+.theory-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.theory-ordered-list {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.subsection-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 1rem 0 0.5rem;
+}
+
+.references-section {
+  background-color: #1f2937;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.references-list {
+  list-style-type: none;
+}
+
+.reference-item {
+  margin-bottom: 0.75rem;
+}
+
+.reference-author {
+  font-weight: 500;
+  color: #d1d5db;
+}
+
+.reference-title {
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+@media (min-width: 768px) {
+  .pipeline-steps {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .pipeline-step {
+    width: 20%;
+    margin-bottom: 0;
+  }
+
+  .pipeline-arrow {
+    display: block;
+  }
+}

@@ -1,0 +1,75 @@
+/* Upload Page styles */
+.upload-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.page-description {
+  color: #9ca3af;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.upload-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.parameters-container {
+  background-color: #1f2937;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.parameters-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.process-button {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  border: none;
+  background-color: #8b5cf6;
+  color: #ffffff;
+  transition: background-color 0.2s;
+}
+
+.process-button:hover:not(.disabled) {
+  background-color: #7c3aed;
+}
+
+.process-button.disabled {
+  background-color: #4b5563;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.processing-note {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .upload-content {
+    grid-template-columns: 2fr 1fr;
+  }
+}

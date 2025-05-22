@@ -1,0 +1,83 @@
+/* Image Comparison styles */
+.comparison-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  margin: 0 auto; /* Center the container */
+}
+
+.before-image,
+.after-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.before-image {
+  width: 100%;
+}
+
+.before-image img,
+.after-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.comparison-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fits within the container */
+}
+
+.slider-divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #fff;
+  cursor: ew-resize;
+}
+
+.slider-handle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.slider-arrows {
+  width: 12px;
+  height: 12px;
+  fill: #000;
+}
+
+.image-label {
+  position: absolute;
+  top: 10px;
+  font-size: 14px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.before-label {
+  left: 10px;
+}
+
+.after-label {
+  right: 10px;
+}
