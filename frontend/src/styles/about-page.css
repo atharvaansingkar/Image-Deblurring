@@ -60,6 +60,14 @@
   margin: 0 auto 1rem;
 }
 
+.avatar-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
 .developer-name {
   font-size: 1.25rem;
   font-weight: 600;
@@ -92,8 +100,9 @@
 }
 
 .social-icon {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px; /* Add space between icons */
   stroke: currentColor;
   stroke-width: 2;
   fill: none;

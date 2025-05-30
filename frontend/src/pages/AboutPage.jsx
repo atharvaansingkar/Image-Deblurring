@@ -1,4 +1,10 @@
-import "../styles/about-page.css"
+import "../styles/about-page.css";
+import linkedInIcon from "../assets/linkedIn-icon.jpg";
+import githubIcon from "../assets/github-icon.jpg";
+import ananyaAvatar from "../assets/ananya.jpg";
+import atharvaAvatar from "../assets/atharva.jpg";
+import sarveshAvatar from "../assets/sarvesh.jpg";
+import sarthakAvatar from "../assets/sarthak.jpg";
 
 const AboutPage = () => {
   return (
@@ -27,102 +33,110 @@ const AboutPage = () => {
         </p>
       </div>
 
-      {/* Developer Cards */}
-      <div className="developer-cards">
-        <div className="developer-card">
-          <div className="developer-avatar"></div>
-          <div className="developer-details">
-            <h3 className="developer-name">Developer 1</h3>
-            <p className="developer-title">Astrophysics Enthusiast</p>
-            <p className="developer-contact">Email: dev1@example.com</p>
+      {/* Developers Section */}
+      <div className="developers-section">
+        <h2 className="section-title">Developers</h2>
+        <div className="developer-cards">
+          <div className="developer-card">
+            <div className="developer-avatar">
+              <img src={ananyaAvatar} alt="Ananya Sharma" className="avatar-image" />
+            </div>
+            <div className="developer-details">
+              <h3 className="developer-name">Ananya Sharma</h3>
+              <div className="developer-links">
+                <a
+                  href="https://www.linkedin.com/in/ananya-sharma-1053122b7/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={linkedInIcon} alt="LinkedIn" className="social-icon" />
+                </a>
+                <a
+                  href="https://github.com/ananyasharma11"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={githubIcon} alt="GitHub" className="social-icon" />
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="developer-card">
-          <div className="developer-avatar"></div>
-          <div className="developer-details">
-            <h3 className="developer-name">Developer 2</h3>
-            <p className="developer-title">Software Engineer</p>
-            <p className="developer-contact">Email: dev2@example.com</p>
+          <div className="developer-card">
+            <div className="developer-avatar">
+              <img src={atharvaAvatar} alt="Atharva Ansingkar" className="avatar-image" />
+            </div>
+            <div className="developer-details">
+              <h3 className="developer-name">Atharva Ansingkar</h3>
+              <div className="developer-links">
+                <a
+                  href="https://www.linkedin.com/in/atharva-ansingkar-793134142/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={linkedInIcon} alt="LinkedIn" className="social-icon" />
+                </a>
+                <a
+                  href="https://github.com/atharvaansingkar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={githubIcon} alt="GitHub" className="social-icon" />
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="developer-card">
-          <div className="developer-avatar"></div>
-          <div className="developer-details">
-            <h3 className="developer-name">Developer 3</h3>
-            <p className="developer-title">Data Scientist</p>
-            <p className="developer-contact">Email: dev3@example.com</p>
+          <div className="developer-card">
+            <div className="developer-avatar">
+              <img src={sarveshAvatar} alt="Sarvesh Bajare" className="avatar-image" />
+            </div>
+            <div className="developer-details">
+              <h3 className="developer-name">Sarvesh Bajare</h3>
+              <div className="developer-links">
+                <a
+                  href="https://www.linkedin.com/in/sarvesh-bajare-bb181a252/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={linkedInIcon} alt="LinkedIn" className="social-icon" />
+                </a>
+                <a
+                  href="https://github.com/geekatbest"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={githubIcon} alt="GitHub" className="social-icon" />
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="developer-card">
-          <div className="developer-avatar"></div>
-          <div className="developer-details">
-            <h3 className="developer-name">Developer 4</h3>
-            <p className="developer-title">UI/UX Designer</p>
-            <p className="developer-contact">Email: dev4@example.com</p>
+          <div className="developer-card">
+            <div className="developer-avatar">
+              <img src={sarthakAvatar} alt="Sarthak Biyani" className="avatar-image" />
+            </div>
+            <div className="developer-details">
+              <h3 className="developer-name">Sarthak Biyani</h3>
+              <div className="developer-links">
+                <a
+                  href="https://www.linkedin.com/in/sarthak-biyani-3098ab259/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={linkedInIcon} alt="LinkedIn" className="social-icon" />
+                </a>
+                <a
+                  href="https://github.com/andare23"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={githubIcon} alt="GitHub" className="social-icon" />
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-
-      {/* External Resources */}
-      <div className="resources-section">
-        <h2 className="section-title">External Resources</h2>
-        <div className="resources-grid">
-          <a href="#" target="_blank" rel="noopener noreferrer" className="resource-link">
-            <svg className="resource-icon" viewBox="0 0 24 24">
-              <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-            </svg>
-            <span>GitHub Repository</span>
-            <svg className="external-icon" viewBox="0 0 24 24">
-              <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-          </a>
-
-          <a
-            href="https://www.nasa.gov/image-library/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="resource-link"
-          >
-            <svg className="resource-icon" viewBox="0 0 24 24">
-              <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" />
-              <path d="M14.828 14.828a4 4 0 015.656 0l4 4a4 4 0 01-5.656 5.656l-1.102-1.101" />
-            </svg>
-            <span>NASA Image Library</span>
-            <svg className="external-icon" viewBox="0 0 24 24">
-              <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-          </a>
-
-          <a href="https://esahubble.org/images/" target="_blank" rel="noopener noreferrer" className="resource-link">
-            <svg className="resource-icon" viewBox="0 0 24 24">
-              <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" />
-              <path d="M14.828 14.828a4 4 0 015.656 0l4 4a4 4 0 01-5.656 5.656l-1.102-1.101" />
-            </svg>
-            <span>ESA Hubble Image Gallery</span>
-            <svg className="external-icon" viewBox="0 0 24 24">
-              <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-          </a>
-
-          <a
-            href="https://scikit-image.org/docs/stable/auto_examples/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="resource-link"
-          >
-            <svg className="resource-icon" viewBox="0 0 24 24">
-              <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" />
-              <path d="M14.828 14.828a4 4 0 015.656 0l4 4a4 4 0 01-5.656 5.656l-1.102-1.101" />
-            </svg>
-            <span>Scikit-image Examples</span>
-            <svg className="external-icon" viewBox="0 0 24 24">
-              <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-          </a>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AboutPage
+export default AboutPage;
